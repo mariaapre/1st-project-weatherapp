@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  font-family: "Arima Madurai", cursive;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+h1 {
+  color: #fddb92;
+}
+div .card-body {
+  background-color: transparent;
+}
+i {
+  position: relative;
+  display: block;
+  top: 2px;
+  left: 27px;
+  width: 150px;
+  font-size: 35px;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+
+.temp {
+  font-size: 55px;
+}
