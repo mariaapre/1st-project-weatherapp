@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/bc81e69b86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
   </head>
+
   <body>
-    hello git
+    <div class="container">
+      <div class="border" p-5 mt-3 rounded-circle shadow">
+      <h1>
+        Weather App
+      </h1>
+      
+      <form id="search-form">
+        <input type="text" placeholder="City Search" autofocus="on" id="search-text-input"/>
+        <input type="submit" value="Search" /> 
+      </form>
+      <button id="location"> Current Location📍 </button>
+      <br/>
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+
+             <p id="date"> Monday, July 5 </p>
+
+             <h2 id="city">Houston,TX</h2>
+             <p> Precipitation: <span id ="rain"> 11 </span>%</p>
+             <p> Humidity: <span id="humid"> 83 </span>%</p>
+            <p> Wind: <span id="wind"> 9</span> mph</p>
+            </div>
+            <div class="col-sm">
+              <span class="temp" id="temp">18</span> <span> <a href="#" id="fahrenheit">°F</a>|<a href="#" id="celsius">°C </a></span> 
+              <br/> <br/> <p> Sunrise: <span id="sunup">  6:45</span> am</p> <p> Sunset: <span id="sundown"> 7:45 </span> pm</p>
+                
+            </div>
+            
+          </div>
+        </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 8rem;">
+            <div class="card-body">
+              <h5 class="card-title">Mon</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <i class="fas fa-cloud-showers-heavy"></i>
+              </h6>
+              <p class="card-text">
+                92° / 79°
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 8rem;">
+            <div class="card-body">
+              <h5 class="card-title">Tues</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <i class="fas fa-bolt"></i>
+              </h6>
+              <p class="card-text">
+                89°/ 79°
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 8rem;">
+            <div class="card-body">
+              <h5 class="card-title">Wed</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <i class="fas fa-cloud-sun"></i>
+              </h6>
+              <p class="card-text">
+                94° / 80°
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 8rem;">
+            <div class="card-body">
+              <h5 class="card-title">Thu</h5>
+              <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-cloud-sun"></i></h6>
+              <p class="card-text">
+                95° / 79°
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 8rem;">
+            <div class="card-body">
+              <h5 class="card-title">Fri</h5>
+              <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-sun"></i></i></h6>
+              <p class="card-text">
+                97° / 77°
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
